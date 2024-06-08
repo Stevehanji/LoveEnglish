@@ -1,0 +1,10 @@
+{
+      "Hoc": {
+            "JumpScared": false,
+            "ProbalityOfJumpScared": 5
+      },
+      "PlayGame": {
+            "TranslateToVietName": false
+      },
+      "Camera": 0
+}

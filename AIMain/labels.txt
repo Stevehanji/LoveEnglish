@@ -1,0 +1,13 @@
+0 Bottle
+1 Human
+2 Paper
+3 Pen
+4 SmartPhone
+5 Glass
+6 Plant
+7 Rubik
+8 Television
+9 Chair
+10 Smart Watch
+11 Book
+12 Table

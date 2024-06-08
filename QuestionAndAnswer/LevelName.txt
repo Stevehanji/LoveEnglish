@@ -1,0 +1,8 @@
+0 : Chào Hỏi
+1 : Gia Đình
+2 : Phòng
+3 : Con vật
+4 : Hiện tại đơn
+5 : Hiện tại tiếp diễn
+6 : Quá khứ đơn
+7 : Tương Lai Đơn
