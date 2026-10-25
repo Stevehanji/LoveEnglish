@@ -26,7 +26,7 @@ WoodenBoardText.SetFont(50, Font_path)
 def GetBlockEditPage(page, block_list):
     return page * 11 if page * 11 < len(block_list) else len(block_list) - (page - 1) * 11
 
-df = pandas.read_excel("StoreData\\Game\\MapEditing.xlsx", header=None)
+df = pandas.read_excel("StoreData/Game/MapEditing.xlsx", header=None)
 MAPDATA = df.values
 class CreateWorld:
     def __init__(self):

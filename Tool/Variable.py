@@ -25,7 +25,7 @@ class Var_Obj:
 
 caption = "Love English"
 pygame.display.set_caption(caption)
-pygame.display.set_icon(pygame.image.load("Asset\\Icon\\Icon.ico"))
+pygame.display.set_icon(pygame.image.load("Asset/Icon/Icon.ico"))
 
 Font_path = "Asset/Font/Font.ttf"
 def font(text, size, color = "white", pos = (0,0), rect = (), ReturnRect = False, ReturnFontWidth = False, ReturnFontHeight = False):

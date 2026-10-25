@@ -47,9 +47,9 @@ def LoadMapData(path):
     
     return Lst
 
-PosCorrectGateFilePath = "StoreData\\Map\\Data\\PosCorrectGate"
-PosGateClockFilePath = "StoreData\\Map\\Data\\PosGateClock"
-MapDataPath = "StoreData\\Map\\Data\\Map"
+PosCorrectGateFilePath = "StoreData/Map/Data/PosCorrectGate"
+PosGateClockFilePath = "StoreData/Map/Data/PosGateClock"
+MapDataPath = "StoreData/Map/Data/Map"
 
 CorrectGateList = LoadFile(PosCorrectGateFilePath)
 GateClockList = LoadFile(PosGateClockFilePath)

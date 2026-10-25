@@ -5,7 +5,7 @@ pygame.init()
 
 Sound_List = {}
 
-path = "Asset\\Sound"
+path = "Asset/Sound"
 SoundListFile = os.listdir(path)
 
 for Sound in SoundListFile:

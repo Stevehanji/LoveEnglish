@@ -1,6 +1,5 @@
 from Tool.Variable import *
 
-running = True
 
 def BoxPercent(percent):
     global running
@@ -25,31 +24,6 @@ def BoxPercent(percent):
                                       100))
 
     pygame.display.update()
-
-if running:
-    BoxPercent(0)
-
-    from Display.display import *
-    BoxPercent(20)
-
-    # AIMAinModule = importlib.import_module("AIMain.CameraAppAI")
-    from AIMain.CameraAppAI import *
-    BoxPercent(30)
-    
-    from Game.PlayGame import *
-    BoxPercent(50)
-    
-    import os
-    BoxPercent(70)
-    
-    from Game.CreateWorld import *
-    BoxPercent(80)
-    
-    from Tool.Sound_List import *
-    BoxPercent(90)
-    
-    from StoreData.Setting import DataStore
-    BoxPercent(100)
 
 class EnglishGameApp():
     def __init__(self):
@@ -323,6 +297,25 @@ class EnglishGameApp():
         pygame.quit()
 
 if __name__ == "__main__":
+    BoxPercent(0)
+    from Display.display import *
+    BoxPercent(20)
+
+        # AIMAinModule = importlib.import_module("AIMain.CameraAppAI")
+        # from AIMain.CameraAppAI import *
+        # BoxPercent(30)
+        
+    from Game.PlayGame import *
+    BoxPercent(50)
+    import os
+    BoxPercent(70)
+    from Game.CreateWorld import *
+    BoxPercent(80)
+    from Tool.Sound_List import *
+    BoxPercent(90)    
+    from StoreData.Setting import DataStore
+    BoxPercent(100)
+
     EnglishGameApp().run()
     SaveDataSetting("Setting", DataStore.SettingData)
 
@@ -330,13 +323,13 @@ if __name__ == "__main__":
     DataStore.StudyData["ChildLevelList"] = subject.ChildLevel
     SaveDataSetting("Study", DataStore.StudyData)
 
-    if Var_Obj.IsJumpApp:
-        # CameraAppAI(DataStore.SettingData["Camera"]).run()
-        CameraAppAI(1).run()
+    # if Var_Obj.IsJumpApp:
+    #     # CameraAppAI(DataStore.SettingData["Camera"]).run()
+    #     CameraAppAI(1).run()
 
-    try:
-        os.remove("StoreData\\sound.mp3")
-    except:
-        pass
+    # try:
+    #     os.remove("StoreData\\sound.mp3")
+    # except:
+    #     pass
     
-    SaveFileFlashCard(flashcard.Data, Var_Obj.Store_FlashCard)
+    # SaveFileFlashCard(flashcard.Data, Var_Obj.Store_FlashCard)

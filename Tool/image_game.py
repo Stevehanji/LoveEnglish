@@ -3,7 +3,8 @@ import os
 import pygame
 
 image_game = {}
-path = "Asset\\Game"
+path = "Asset/Game"
+# print(os.listdir("Asset/Game"))
 for file in os.listdir(path):
     ImageFile = os.path.join(path,file)
 

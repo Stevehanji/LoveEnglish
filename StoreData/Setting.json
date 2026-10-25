@@ -6,5 +6,6 @@
       "PlayGame": {
             "TranslateToVietName": false
       },
-      "Camera": 0
+      "Camera": 0,
+      "Permission": "4B686F615675416E644368616E40383139323230313031323334"
 }

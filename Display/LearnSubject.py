@@ -146,7 +146,7 @@ class Subject:
         font(f"Unit: {self.LevelCurrentToLearn + 1}", 75, "black",(0,-200),(200, 200,screen_width - 400, screen_height - 400))
         font(f"{levelDictionary[self.LevelCurrentToLearn]}", 45, "black",(0,-100),(200, 200,screen_width - 400, screen_height - 400))
 
-        MaxChildLevel = {len(os.listdir(f"QuestionAndAnswer\\Level{self.LevelCurrentToLearn}"))}
+        MaxChildLevel = {len(os.listdir(f"QuestionAndAnswer/Level{self.LevelCurrentToLearn}"))}
         font(f"{self.ChildLevel[self.LevelCurrentToLearn] + 1} : {MaxChildLevel}",
              50, "black",(0,0),(200, 200,screen_width - 400, screen_height - 400))
 
@@ -306,10 +306,10 @@ class Subject:
         self.Letters = None
 
     def UpdateLevelOrChildLevel(self):
-        if self.ChildLevel[self.LevelCurrentToLearn] < len(os.listdir(f"QuestionAndAnswer\\Level{self.LevelCurrentToLearn}")):
+        if self.ChildLevel[self.LevelCurrentToLearn] < len(os.listdir(f"QuestionAndAnswer/Level{self.LevelCurrentToLearn}")):
             self.ChildLevel[self.LevelCurrentToLearn] += 1
             
-            if self.ChildLevel[self.LevelCurrentToLearn] == len(os.listdir(f"QuestionAndAnswer\\Level{self.LevelCurrentToLearn}")):
+            if self.ChildLevel[self.LevelCurrentToLearn] == len(os.listdir(f"QuestionAndAnswer/Level{self.LevelCurrentToLearn}")):
                 self.ChildLevel[self.LevelCurrentToLearn] -= 1
 
                 if self.level == self.LevelCurrentToLearn and self.level != 8:

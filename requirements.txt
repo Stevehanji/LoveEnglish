@@ -1,0 +1,6 @@
+pygame-ce
+pandas
+openpyxl
+googletrans
+tensorflow
+gtts

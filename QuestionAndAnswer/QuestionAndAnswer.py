@@ -27,10 +27,10 @@ def GetQuestion(level, ChildLevel, IsAdmin = False):
     QuestionSystem = []
 
     if not IsAdmin:
-        data = pd.read_excel(f"QuestionAndAnswer\\Level{level}\\{ChildLevel}.xlsx")
+        data = pd.read_excel(f"QuestionAndAnswer/Level{level}/{ChildLevel}.xlsx")
     
     else:
-        data = pd.read_excel(f"QuestionAndAnswer\\{level}\\{ChildLevel}.xlsx")
+        data = pd.read_excel(f"QuestionAndAnswer/{level}/{ChildLevel}.xlsx")
 
     def multichoice(Question):
         Q = data["Question"][Question]

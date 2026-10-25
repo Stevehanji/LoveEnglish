@@ -35,6 +35,7 @@ class JumpScare:
                           screen_height // 2 - IMG.get_height() // 2))
 
 def TranslateToVietNam(text):
-    return translator.translate(text, dest="vi", src = "en").text
+    return ""
+    # return translator.translate(text, dest="vi", src = "en").text
 
 Jump_Scare = JumpScare()
